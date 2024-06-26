@@ -1,0 +1,75 @@
+<section>
+	<div class="pure-g">
+		<div class="title">Add New User</div>
+	</div>
+	<form action="#" th:action="@{/edit/{id}(id=${user.id})}" th:object="${user}" method="post">
+		<table class="pure-table pure-table-striped" width="100%">
+			<tbody>
+				<tr>
+					<td colspan="2"><strong>&raquo; Personal information </strong></td>
+				</tr>
+				<tr>
+					<td>First name </td>
+					<td>
+						<input type="text" th:field="*{firstName}" id="firstName" placeholder="First name">
+						<span th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>Last name </td>
+					<td>
+						<input type="text" th:field="*{lastName}" id="lastName" placeholder="Last name">
+						<span th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>E-mail </td>
+					<td>
+						<input type="text" th:field="*{email}" id="email" placeholder="E-mail">
+						<span th:if="${#fields.hasErrors('email')}" th:errors="*{email}"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>Mobile number</td>
+					<td><input type="text" th:field="*{mobile}" id="mobile" placeholder="Mobile"></td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td><input type="password" th:field="*{password}" id="password" placeholder="Password"></td>
+				</tr>
+				<tr>
+					<td colspan="2"><strong>&raquo; Address information </strong></td>
+				</tr>
+				<tr>
+					<td>Street</td>
+					<td><input type="text" th:field="*{street}" id="street" placeholder="Street address"></td>
+				</tr>
+				<tr>
+					<td>Number</td>
+					<td><input type="text" th:field="*{number}" id="number" placeholder="Number"></td>
+				</tr>
+				<tr>
+					<td>Neighborhood</td>
+					<td><input type="text" th:field="*{neighborhood}" id="neighborhood" placeholder="Nighborhood"></td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td><input type="text" th:field="*{city}" id="city" placeholder="City"></td>
+				</tr>
+				<tr>
+					<td>State</td>
+					<td><input type="text" th:field="*{state}" id="state" placeholder="State"></td>
+				</tr>
+				<tr>
+					<td>Country</td>
+					<td><input type="text" th:field="*{country}" id="country" placeholder="Country"></td>
+				</tr>
+				<tr>
+					<td colspan="2">
+						<input class="button-success pure-button" type="submit" value="Update User">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</section>

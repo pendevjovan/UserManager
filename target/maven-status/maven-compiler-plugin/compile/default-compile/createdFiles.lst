@@ -1,0 +1,5 @@
+br/com/odemur/crud/repository/UserRepository.class
+br/com/odemur/crud/controller/UserController.class
+br/com/odemur/crud/SpringBootCrudApplication$1.class
+br/com/odemur/crud/domain/User.class
+br/com/odemur/crud/SpringBootCrudApplication.class

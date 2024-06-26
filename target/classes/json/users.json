@@ -1,0 +1,41 @@
+[
+  {
+    "firstName": "John",
+	"lastName": "Doe",
+	"email": "john@mail.com",
+	"mobile": "",
+	"password": "",
+	"street": "",
+	"number": "",
+	"neighborhood": "",
+	"city": "New York",
+	"state": "NY",
+	"country": "USA"
+  },
+  {
+    "firstName": "Mary",
+	"lastName": "Jane",
+	"email": "mary@mail.com",
+	"mobile": "",
+	"password": "",
+	"street": "",
+	"number": "",
+	"neighborhood": "",
+	"city": "Los Angeles",
+	"state": "CA",
+	"country": "USA"
+  },
+  {
+    "firstName": "Arnold",
+	"lastName": "Schwarzenegger",
+	"email": "arnold@mail.com",
+	"mobile": "",
+	"password": "",
+	"street": "",
+	"number": "",
+	"neighborhood": "",
+	"city": "Graz",
+	"state": "ES",
+	"country": "Austria"
+  }
+]

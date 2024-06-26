@@ -1,0 +1,41 @@
+<head th:fragment="header">
+	<meta charset="utf-8">
+	<title>Simple CRUD in Java, Spring Boot, Thymeleaf and Pure.CSS</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Simple CRUD in Java, Spring Boot, Thymeleaf and Pure.CSS">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+		integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+		integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="/css/style.css">
+</head>
+
+<aside th:fragment="aside">
+	<a href="/index"><img class="logo" alt="User Manager - Spring Boot" src="/images/logo.png" width="100%" /></a>
+	<div class="pure-menu">
+		<ul class="pure-menu-list">
+			<li class="pure-menu-item">
+				<a href="/index" class="pure-menu-link">List Users</a>
+			</li>
+			<li class="pure-menu-item">
+				<a href="/add" class="pure-menu-link">Add User</a>
+			</li>
+			<li class="pure-menu-heading"></li>
+			<li class="pure-menu-heading">Samples</li>
+			<li class="pure-menu-item">
+				<a href="/sample-1" class="pure-menu-link">Sample 1</a>
+			</li>
+			<li class="pure-menu-item">
+				<a href="sample-2" class="pure-menu-link">Sample 2</a>
+			</li>
+			<li class="pure-menu-item">
+				<a href="sample-3" class="pure-menu-link">Sample 3</a>
+			</li>
+		</ul>
+	</div>
+</aside>
+
+<footer th:fragment="footer">
+	<p>2021-2022<br /><a href="https://odemur.com.br" target="_blank">www.odemur.com.br</a></p>
+</footer>

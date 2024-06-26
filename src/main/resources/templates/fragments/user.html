@@ -1,0 +1,83 @@
+<section>
+	<div class="pure-g">
+		<div class="title">Add New User</div>
+	</div>
+	<form action="#" th:action="@{/edit/{id}(id=${user.id})}" th:object="${user}" method="post">
+		<table class="pure-table pure-table-striped" width="100%">
+			<tbody>
+				<tr>
+					<td colspan="2"><strong>&raquo; Personal information </strong></td>
+				</tr>
+				<tr>
+					<td>First name </td>
+					<td>
+						<div th:text="*{firstName}">
+					</td>
+				</tr>
+				<tr>
+					<td>Last name </td>
+					<td>
+						<div th:text="*{lastName}">
+					</td>
+				</tr>
+				<tr>
+					<td>E-mail </td>
+					<td>
+						<div th:text="*{email}">
+					</td>
+				</tr>
+				<tr>
+					<td>Mobile number</td>
+					<td>
+						<div th:text="*{mobile}">
+					</td>
+				</tr>
+				<tr>
+					<td>Password</td>
+					<td>
+						<div th:field="*{password}">
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2"><strong>&raquo; Address information </strong></td>
+				</tr>
+				<tr>
+					<td>Street</td>
+					<td>
+						<div th:text="*{street}">
+					</td>
+				</tr>
+				<tr>
+					<td>Number</td>
+					<td>
+						<div th:text="*{number}">
+					</td>
+				</tr>
+				<tr>
+					<td>Neighborhood</td>
+					<td>
+						<div th:text="*{neighborhood}">
+					</td>
+				</tr>
+				<tr>
+					<td>City</td>
+					<td>
+						<div th:text="*{city}">
+					</td>
+				</tr>
+				<tr>
+					<td>State</td>
+					<td>
+						<div th:text="*{state}">
+					</td>
+				</tr>
+				<tr>
+					<td>Country</td>
+					<td>
+						<div th:text="*{country}">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</section>

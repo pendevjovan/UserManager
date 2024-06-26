@@ -1,0 +1,83 @@
+/* 
+Default CSS for Spring Boot CRUD
+	
+@author Odemur Marangoni
+@version 1.0	
+*/
+.logo {
+margin: 10px 0 0 0;
+}
+
+h1 {
+font-size: 1.6em;
+}
+
+div {
+margin: 10px 0 10px 0;
+}
+.title, .action {
+width: 50%;
+float: left;
+display: inline;
+}
+
+.title {
+font-size: 1.6em;
+}
+.action button {
+float: right;
+}
+
+th {
+font-size: 1em !important;
+}
+
+footer p {
+font-size: 13px;
+text-align: center;
+}
+
+tr td span {
+color: red;
+}
+
+.button-success,
+.button-error,
+.button-warning,
+.button-secondary {
+color: white;
+border-radius: 4px;
+text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.button-success {
+background: rgb(28, 184, 65);
+}
+
+.button-error {
+background: rgb(202, 60, 60);
+}
+
+.button-warning {
+background: #877f7d;
+}
+
+.button-secondary {
+background: rgb(66, 184, 221);
+}
+
+.button-xsmall {
+font-size: 70%;
+}
+
+.button-small {
+font-size: 85%;
+}
+
+.button-large {
+font-size: 110%;
+}
+
+.button-xlarge {
+font-size: 125%;
+}

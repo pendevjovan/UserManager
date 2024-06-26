@@ -1,0 +1,47 @@
+<section>
+	<div th:switch="${users}">
+		<h2 th:case="NULL">No users found!</h2>
+		<div th:case="*">
+			<div class="title">Users List</div>
+			<div class="action"><a href="/add"><button class="button-success pure-button">
+						+ User</button></a>
+			</div>
+			<table class="pure-table pure-table-striped" width="100%">
+				<thead>
+					<tr>
+						<th>ID</th>
+						<th>First name</th>
+						<th>Last name</th>
+						<th>Email</th>
+						<th>Details</th>
+						<th>Edit</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="user : ${users}">
+						<td th:text="${user.id}"></td>
+						<td th:text="${user.firstName}"></td>
+						<td th:text="${user.lastName}"></td>
+						<td th:text="${user.email}"></td>
+						<td><a th:href="@{/user/{id}(id=${user.id})}">
+								<button class="pure-button button-warning button-xsmall">
+									<i class="fa-regular fa-square-plus"></i> Details
+								</button>
+							</a></td>
+						<td><a th:href="@{/edit/{id}(id=${user.id})}">
+								<button class="pure-button button-secondary button-xsmall">
+									<i class="fa-regular fa-pen-to-square"></i> Edit
+								</button>
+							</a></td>
+						<td><a th:href="@{/delete/{id}(id=${user.id})}">
+								<button class="pure-button button-error button-xsmall">
+									<i class="fa-regular fa-trash-can"></i> Delete
+								</button>
+							</a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</section>
