@@ -1,2 +1,3 @@
 User Manager Application
-Java Spring Boot , PostgreSQL
+
+Thymeleaf, Java Spring Boot, PotgreSQL, Docker, Kubernetes
