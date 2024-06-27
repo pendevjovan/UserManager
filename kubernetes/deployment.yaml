@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: usermanager
+  namespace: usermanager
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: usermanager
+  template:
+    metadata:
+      labels:
+        app: usermanager
+    spec:
+      containers:
+      - name: usermanager
+        image: pendevjovan/usermanager:latest
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8090
+        envFrom:
+        - configMapRef:
+            name: app-config
+        - secretRef:
+            name: app-secret

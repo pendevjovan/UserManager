@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: app-config
+  namespace: usermanager
+data:
+  application.properties: |
+    server.port=${PORT:8090}
+    spring.datasource.url=jdbc:postgresql://postgres-db:5432/postgres
+    spring.datasource.username=postgres
+    spring.datasource.password=postgres
+    spring.jpa.hibernate.ddl-auto=update
