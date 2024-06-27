@@ -1,2 +1,2 @@
-# CRUD App built on Java, Spring Boot and Thymeleaf
-KII
+User Manager Application
+Java Spring Boot , PostgreSQL
